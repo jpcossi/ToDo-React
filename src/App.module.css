@@ -1,0 +1,86 @@
+.header{
+  height: 20rem;
+  background: var(--gray-700);
+  text-align: center;
+  img{
+    padding-top: 77px;
+  }
+}
+
+.main{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 73.6rem;
+}
+
+.infoCount{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 6.4rem 0 2.4rem;
+
+  p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blue-300);
+  }
+
+  p + p{
+    color: var(--purple-300);
+  }
+
+  p span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.2rem 0.8rem;
+    color: var(--gray-200);
+    background: var(--gray-400);
+  }
+}
+
+.newTask{
+  display: flex;
+  flex: 1;
+
+  gap: 0.8rem;   
+  height: 5.4rem;
+
+  input{
+    padding: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 63.8rem;
+    color: var(--gray-100);
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+  }
+
+  input:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--purple-300);
+  }
+
+  button{
+    width: 9.0rem;
+    padding: 1.6rem;
+    font-weight: bold;
+    
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--gray-100);
+    background: var(--blue-200);
+    
+    cursor: pointer;
+    transition:  0.2s;
+    border: 1px solid var(--gray-700);
+  }
+
+  button:hover{
+    background: var(--blue-300);
+  }
+}
+
+.newTask input, .newTask button {
+  transform: translateY(-50%);
+}
